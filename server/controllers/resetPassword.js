@@ -3,7 +3,7 @@ const User = require("../models/user")
 const mailSender = require("../utils/mailSender");
 const { response } = require("express");
 require("dotenv").config();
-const bcrypt = require("bcrypt");
+const bcrypt = require('../app.js').bcrypt;
 const crypto = require("crypto");
 // reset password token
  
